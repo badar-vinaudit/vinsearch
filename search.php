@@ -1,11 +1,10 @@
 <?php
 
-require_once('root.inc.php');
-require_once($ROOT . 'includes/autoload.php');
+require_once(__DIR__ . '/includes/autoload.php');
 
 $vehicleData = null;
 if (isset($_POST['search'])) {
-  $vin = stripslashes($_POST['vin']);
+  $vin = htmlspecialchars($_POST['vin'], ENT_QUOTES);
   $obj = new VehicleListings();
   $vehicleData = $obj->getRecordByVin($vin);
 }

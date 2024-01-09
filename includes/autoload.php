@@ -1,4 +1,3 @@
 <?php
-
-require_once($ROOT . 'config/config.php');
-require_once($ROOT . 'model/vehiclelistings.php');
+require_once(__DIR__ . '/../config/config.php');
+require_once(__DIR__ . '/../model/vehiclelistings.php');

@@ -1,3 +1,3 @@
 <?php
 
-$ROOT = '/var/www/html/vinsearch/';
+$ROOT = realpath(dirname(__FILE__));
